@@ -25,12 +25,10 @@ This repository contains implementations of multiple face recognition models: El
 │       ├── __init__.py         # Model initialization
 │       └── model.py            # Buffalo_L model implementation
 ├── pretrain-model/             # Directory for pretrained model weights
-│   ├── 295672backbone.pth      # Pretrained ElasticFace backbone weights
-│   ├── adaface_ir101_webface12m.ckpt  # Pretrained AdaFace model weights (to be downloaded)
-│   ├── elasticface_demo.ckpt   # Demo ElasticFace model
-│   ├── adaface_demo.ckpt       # Demo AdaFace model
-│   ├── facenet512_model.h5     # FaceNet512 model weights (downloaded automatically)
-│   └── buffalo_l/              # Buffalo_L model files (downloaded automatically)
+│   ├── 295672backbone.pth      # Pretrained ElasticFace backbone weights (needs to be downloaded)
+│   ├── adaface_ir101_webface12m.ckpt  # Pretrained AdaFace model weights (needs to be downloaded)
+│   ├── buffalo_l/              # Buffalo_L model files (downloaded automatically)
+│   └── models/                 # Additional model files (downloaded automatically)
 ├── test/                       # Directory for test images
 │   ├── out.jpg                 # Test image 1
 │   └── out1.png                # Test image 2
@@ -46,6 +44,7 @@ This repository contains implementations of multiple face recognition models: El
 ├── cleanup.py                  # Script to remove redundant files
 ├── SUMMARY.md                  # Summary of model comparison results
 ├── BENCHMARK_README.md         # Documentation for benchmarking system
+├── pretrain-model-readme.md    # Information about obtaining model files
 └── requirements.txt            # Dependencies
 ```
 
@@ -65,6 +64,10 @@ insightface>=0.6.0
 opencv-python>=4.5.0
 tensorflow>=2.4.0
 ```
+
+## Pretrained Model Files
+
+Due to their large size, pretrained model files are not included in this repository. Please see `pretrain-model-readme.md` for instructions on how to download and set up the model files.
 
 ## Usage
 
